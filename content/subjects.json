@@ -1,22 +1,46 @@
 {
   "grade": 5,
   "curriculum": "الجمهورية العربية السورية - 2025/2026",
-  "lessonCycleHours": 48,
-  "mastery": { "requiredSuccessfulAttempts": 3, "minimumScorePercent": 80 },
-  "flow": ["lesson", "guided_adventure", "mastery_test", "reward", "smart_review"],
-  "subjects": [
-    {"id":"arabic","name":"اللغة العربية","icon":"📘","source":"العربية لغتي - الصف الخامس.pdf","status":"content_indexing"},
-    {"id":"math","name":"الرياضيات","icon":"➗","source":"الریاضیات - الصف الخامس.pdf","status":"content_indexing"},
-    {"id":"science","name":"العلوم","icon":"🔬","source":"العلوم - الصف الخامس.pdf","status":"content_indexing"},
-    {"id":"islamic","name":"التربية الإسلامية","icon":"🌙","source":"التربية الدينية الإسلامية - الصف الخامس.pdf","status":"content_indexing"},
-    {"id":"social","name":"الدراسات الاجتماعية","icon":"🌍","source":"الدراسات الإجتماعية - الصف الخامس (1).pdf","status":"content_indexing"},
-    {"id":"english","name":"اللغة الإنكليزية","icon":"🔤","sources":["اللغة الانكليزية - كتاب الطالب - الصف الخامس.pdf","اللغة الانكليزية - كتاب الأنشطة - الصف الخامس.pdf"],"status":"content_indexing"}
+  "learningCycle": {
+    "days": 3,
+    "day1": "فهم الدرس: قراءة موجزة وشرح بسيط ونشاط واحد.",
+    "day2": "تدريب وتثبيت: أسئلة جديدة وتطبيق عملي على الفكرة نفسها.",
+    "day3": "مراجعة متناوبة: استرجاع من الدروس السابقة قبل فتح الدرس الجديد.",
+    "advanceRule": "لا ينتقل وليد إلى درس جديد قبل إنهاء اليومين وتحقيق 80% على الأقل في التدريب والمراجعة."
+  },
+  "mastery": {"requiredSuccessfulAttempts":3,"minimumScorePercent":80},
+  "todayCycle": [
+    {"day":1,"mode":"فهم الدرس","lessons":[
+      {"id":"arabic-1","subject":"اللغة العربية","icon":"📘","title":"السمكة الذهبية","focus":"الفهم والتعاون"},
+      {"id":"math-1","subject":"الرياضيات","icon":"➗","title":"شبكة الإحداثيات","focus":"تحديد المواقع على الشبكة"},
+      {"id":"science-1","subject":"العلوم","icon":"🔬","title":"نبض الحياة","focus":"القلب والدورة الدموية"},
+      {"id":"social-1","subject":"الدراسات الاجتماعية","icon":"🌍","title":"الأرض أحد كواكب المجموعة الشمسية","focus":"موقع الأرض في المجموعة الشمسية"},
+      {"id":"islamic-1","subject":"التربية الإسلامية","icon":"🌙","title":"عاقبة الصبر والثبات","focus":"تلاوة وفهم المعنى"},
+      {"id":"english-1","subject":"اللغة الإنكليزية","icon":"🔤","title":"Unit 1: At School","focus":"مفردات المدرسة ونشاط الكتاب"}
+    ]},
+    {"day":2,"mode":"تدريب وتثبيت","lessons":[
+      {"id":"arabic-1","subject":"اللغة العربية","icon":"📘","title":"السمكة الذهبية","focus":"أسئلة فهم وقواعد"},
+      {"id":"math-1","subject":"الرياضيات","icon":"➗","title":"شبكة الإحداثيات","focus":"تطبيقات على الشبكة"},
+      {"id":"science-1","subject":"العلوم","icon":"🔬","title":"نبض الحياة","focus":"تثبيت المفاهيم"},
+      {"id":"social-1","subject":"الدراسات الاجتماعية","icon":"🌍","title":"الأرض أحد كواكب المجموعة الشمسية","focus":"تدريب ومفاهيم"},
+      {"id":"islamic-1","subject":"التربية الإسلامية","icon":"🌙","title":"عاقبة الصبر والثبات","focus":"تدريب وحفظ"},
+      {"id":"english-1","subject":"اللغة الإنكليزية","icon":"🔤","title":"Unit 1: At School","focus":"تدريبات Workbook"}
+    ]},
+    {"day":3,"mode":"مراجعة متناوبة","lessons":[
+      {"id":"arabic-review","subject":"اللغة العربية","icon":"📘","title":"مراجعة السمكة الذهبية","focus":"فهم ومعانٍ"},
+      {"id":"math-review","subject":"الرياضيات","icon":"➗","title":"مراجعة شبكة الإحداثيات","focus":"تحدي سريع"},
+      {"id":"science-review","subject":"العلوم","icon":"🔬","title":"مراجعة نبض الحياة","focus":"استرجاع المفاهيم"},
+      {"id":"social-review","subject":"الدراسات الاجتماعية","icon":"🌍","title":"مراجعة الأرض والمجموعة الشمسية","focus":"بطاقات تذكّر"},
+      {"id":"islamic-review","subject":"التربية الإسلامية","icon":"🌙","title":"مراجعة عاقبة الصبر والثبات","focus":"تسميع ومعنى"},
+      {"id":"english-review","subject":"اللغة الإنكليزية","icon":"🔤","title":"Review: At School","focus":"Words and activities"}
+    ]}
   ],
-  "parentMode": {
-    "pairing": "secure_code",
-    "childDevice": "offline_first",
-    "syncWhenOnline": true,
-    "reports": ["lesson_progress", "time_spent", "attempts", "mistakes", "mastery"],
-    "reminderCharacters": ["father_serious", "father_proud"]
-  }
+  "subjects": [
+    {"id":"arabic","name":"اللغة العربية","icon":"📘","source":"العربية لغتي - الصف الخامس.pdf"},
+    {"id":"math","name":"الرياضيات","icon":"➗","source":"الریاضیات - الصف الخامس.pdf"},
+    {"id":"science","name":"العلوم","icon":"🔬","source":"العلوم - الصف الخامس.pdf"},
+    {"id":"islamic","name":"التربية الإسلامية","icon":"🌙","source":"التربية الدينية الإسلامية - الصف الخامس.pdf"},
+    {"id":"social","name":"الدراسات الاجتماعية","icon":"🌍","source":"الدراسات الإجتماعية - الصف الخامس (1).pdf"},
+    {"id":"english","name":"اللغة الإنكليزية","icon":"🔤","sources":["اللغة الانكليزية - كتاب الطالب - الصف الخامس.pdf","اللغة الانكليزية - كتاب الأنشطة - الصف الخامس.pdf"]}
+  ]
 }
