@@ -1,0 +1,22 @@
+{
+  "grade": 5,
+  "curriculum": "الجمهورية العربية السورية - 2025/2026",
+  "lessonCycleHours": 48,
+  "mastery": { "requiredSuccessfulAttempts": 3, "minimumScorePercent": 80 },
+  "flow": ["lesson", "guided_adventure", "mastery_test", "reward", "smart_review"],
+  "subjects": [
+    {"id":"arabic","name":"اللغة العربية","icon":"📘","source":"العربية لغتي - الصف الخامس.pdf","status":"content_indexing"},
+    {"id":"math","name":"الرياضيات","icon":"➗","source":"الریاضیات - الصف الخامس.pdf","status":"content_indexing"},
+    {"id":"science","name":"العلوم","icon":"🔬","source":"العلوم - الصف الخامس.pdf","status":"content_indexing"},
+    {"id":"islamic","name":"التربية الإسلامية","icon":"🌙","source":"التربية الدينية الإسلامية - الصف الخامس.pdf","status":"content_indexing"},
+    {"id":"social","name":"الدراسات الاجتماعية","icon":"🌍","source":"الدراسات الإجتماعية - الصف الخامس (1).pdf","status":"content_indexing"},
+    {"id":"english","name":"اللغة الإنكليزية","icon":"🔤","sources":["اللغة الانكليزية - كتاب الطالب - الصف الخامس.pdf","اللغة الانكليزية - كتاب الأنشطة - الصف الخامس.pdf"],"status":"content_indexing"}
+  ],
+  "parentMode": {
+    "pairing": "secure_code",
+    "childDevice": "offline_first",
+    "syncWhenOnline": true,
+    "reports": ["lesson_progress", "time_spent", "attempts", "mistakes", "mastery"],
+    "reminderCharacters": ["father_serious", "father_proud"]
+  }
+}

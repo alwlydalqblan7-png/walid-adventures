@@ -1,0 +1,12 @@
+{
+  "appId": "com.taifdigital.walidadventures",
+  "appName": "مغامرات وليد",
+  "webDir": "www",
+  "server": { "androidScheme": "https" },
+  "plugins": {
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_school",
+      "iconColor": "#1C3F66"
+    }
+  }
+}
