@@ -8,6 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install web dependencies
+        run: npm ci
+      - name: Sync Android project
+        run: npx cap sync android
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
